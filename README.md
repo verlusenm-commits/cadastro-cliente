@@ -37,7 +37,7 @@ Este projeto demonstra competências fundamentais para um desenvolvedor em iníc
 
 ## 📸 Pré-visualização da Interface
 
- <img width="672" height="555" alt="image" src="https://github.com/user-attachments/assets/96b668d3-b47d-4e28-b214-104e18770788" 
+ <img width="672" height="555" alt="image" src="https://github.com/user-attachments/assets/a6fbb2b6-d56a-4d4a-8160-de8fc5324c87" />
 
 ## 🚀 Próximas Melhorias (Roadmap)
 

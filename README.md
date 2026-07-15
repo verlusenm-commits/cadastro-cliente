@@ -45,7 +45,7 @@ Este projeto demonstra competências fundamentais para um desenvolvedor em iníc
 
 - [ ] Implementar máscaras dinâmicas para CPF e Telefone.
 - [ ] Adicionar persistência de dados no `localStorage` do navegador.
-- [*] Criar um Dashboard simples para listar os clientes cadastrados.
+- [OK] Criar um Dashboard simples para listar os clientes cadastrados.
 - [ ] Implementar Dark Mode para melhor conforto visual.
 
 ---

@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente | Portfólio</title>
+    <title>Dashboard de Clientes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <main class="container">
         <section class="form-header">
             <h1>Cadastro de Cliente</h1>
-            <p>Preencha os dados abaixo para registrar o novo cliente.</p>
+            <p>Registre novos clientes e gerencie os cadastros já salvos.</p>
         </section>
 
         <form id="clientForm" class="registration-form">
-            
+            <input type="hidden" id="clientId" name="clientId">
+
             <div class="input-group">
                 <label for="fullname">Nome Completo</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Ex: João Silva" required>
@@ -38,8 +38,43 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+                <button type="button" id="cancelEditBtn" class="btn-cancel hidden">Cancelar Edição</button>
+            </div>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
         </form>
+
+        <section class="dashboard" aria-labelledby="dashboardTitle">
+            <div class="dashboard-header">
+                <div>
+                    <h2 id="dashboardTitle">Carteira de Clientes</h2>
+                    <p>Visualize, edite ou exclua os cadastros de clientes.</p>
+                </div>
+                <span id="clientsCount" class="badge">0 clientes</span>
+            </div>
+
+            <div id="detailsPanel" class="details-panel hidden">
+                <h3>Detalhes do cliente</h3>
+                <div id="detailsContent"></div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>CPF</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientsBody"></tbody>
+                </table>
+                <div id="emptyState" class="empty-state">Nenhum cliente cadastrado ainda.</div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>

@@ -37,13 +37,15 @@ Este projeto demonstra competências fundamentais para um desenvolvedor em iníc
 
 ## 📸 Pré-visualização da Interface
 
- <img width="672" height="555" alt="image" src="https://github.com/user-attachments/assets/a6fbb2b6-d56a-4d4a-8160-de8fc5324c87" />
+
+ <img width="1001" height="599" alt="image" src="https://github.com/user-attachments/assets/a58fb364-9ff7-4844-b5d2-086f96bc1ce6" />
+
 
 ## 🚀 Próximas Melhorias (Roadmap)
 
 - [ ] Implementar máscaras dinâmicas para CPF e Telefone.
 - [ ] Adicionar persistência de dados no `localStorage` do navegador.
-- [ ] Criar um Dashboard simples para listar os clientes cadastrados.
+- [*] Criar um Dashboard simples para listar os clientes cadastrados.
 - [ ] Implementar Dark Mode para melhor conforto visual.
 
 ---
